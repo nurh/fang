@@ -11,4 +11,4 @@ This project is just to get me started on ARM development.
 ## Goals
 
 * Right now, just bringup from baremetal and getting output via serial.
-* Initial target platform is the pandaboard es. Will add more as I get more hardware. 
+* Initial target platform is the pandaboard es and raspberry pi 2. More may be added.
