@@ -1,12 +1,16 @@
-/* 
+/* serial.h
+ *
+ * Copyright (C) 2015 Nur Hussein
+ * Licensed under the GPL v2. See COPYING for more details.
+ *
  * Basic serial port support for OMAP4460 devices (Pandaboard ES)
- * --------------------------------------------------------------
+ * -------------------------------------------------------------------------
  *
- *  Register information was gleaned from TI OMAP4460 Technical Reference Manual,
- *  referenced in the Bibliography as [4460TRM].
+ *  Register information was gleaned from TI OMAP4460 Technical Reference 
+ *  Manual, referenced in the Bibliography as [4460TRM].
  *
- *  UART3 is the physical serial port on the Pandaboard ES, and the one we're 
- *  interested in primarily.
+ *  UART3 is the physical serial port on the Pandaboard ES, and the one we 
+ *  are interested in primarily.
  *
  *  Table 23-167 of the [4460TRM] describes register addresses of UART3.
  *
