@@ -1,6 +1,9 @@
 /* mmio.h
  *
- * Copyright (C) 2015 Nur Hussein
+ * Copyright (C) 2015 Nur Hussein <hussein@unixcat.org>
+ * MMIO functions inspired by code written 
+ * by Goswin von Brederlow <goswin-v-b@web.de>
+ *
  * Licensed under the GPL v2. See COPYING for more details.
  *
  * Memory-mapped IO functions and headers.
