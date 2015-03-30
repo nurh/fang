@@ -24,8 +24,18 @@
 
 /* Register addresses (BASE + OFFSET) */
 
-#define UART3_THR (UART3_BASE + 0x0)
-#define UART3_LSR (UART3_BASE + 0x14)
+#define UART3_THR (UART3_BASE + 0x00) /* THR == Transmit Holding Register - 64 bytes of FIFO */
+#define UART3_RHR (UART3_BASE + 0x00) /* RHR == Receiver Holding Register */
+#define UART3_DLL (UART3_BASE + 0x00) /* Divisor low */
+#define UART3_IER (UART3_BASE + 0x04) /* IER == Interrupt Enable Register */ 
+#define UART3_DLH (UART3_BASE + 0x04) /* Divisor high */
+#define UART3_FCR (UART3_BASE + 0x08) /* FCR == FIFO Control Register */
+#define UART3_LCR (UART3_BASE + 0x0C) /* LCR == Line Control Register */
+#define UART3_MCR (UART3_BASE + 0x10) /* MCR == Modem Control Register */
+#define UART3_LSR (UART3_BASE + 0x14) /* LSR == Line Status Register */
+#define UART3_MSR (UART3_BASE + 0x18) /* MSR == Modem Status Register */
+#define UART3_SPR (UART3_BASE + 0x1C) /* SPR == Scratch Pad Register - for storing temp data */
+#define UART3_MDR1 (UART3_BASE + 0x20) /* MDR1 == Mode Definition Register 1 */
 
 /* Divisors, depending on baud rate. Not a comprehensive list. */
 
