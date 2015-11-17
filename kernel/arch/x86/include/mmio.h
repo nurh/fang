@@ -22,6 +22,7 @@ static inline void outb(uint8_t v, uint16_t port)
 {
 	asm volatile("outb %0,%1" : : "a" (v), "dN" (port));
 }
+
 static inline uint8_t inb(uint16_t port)
 {
 	u8 v;
@@ -45,6 +46,7 @@ static inline void outl(uint32_t v, uint16_t port)
 {
 	asm volatile("outl %0,%1" : : "a" (v), "dN" (port));
 }
+
 static inline uint32_t inl(uint16_t port)
 {
 	uint32_t v;

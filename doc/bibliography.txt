@@ -1,3 +1,2 @@
-[4460TRM]	OMAP4460 Multimedia Device (Silicon Revision 1.x) Technical Reference Manual
-		Version AB
-		Texas Instruments
+[BCM2835-ARM-Peripherals]	Broadcom BCM2835 ARM Peripherals
+				2012 Broadcom Corporation
