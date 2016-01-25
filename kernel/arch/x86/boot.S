@@ -2,9 +2,10 @@
  * 
  * Copyright (C) 2015 Nur Hussein <hussein@unixcat.org>
  *
- * -------------------------------------------------------------------------
+ * Licensed under the GPL v2. See COPYING for more details. 
  *
  * Boot code on x86.
+ * -------------------------------------------------------------------------
  *
  */
 
@@ -34,6 +35,10 @@ _start:
 	
 /* Load up the stack pointer */
 movl $stack_top, %esp 
+
+/* Pass the multiboot structure to main, 
+   as the pointer is contained in ebx. */
+pushl %ebx
 
 /* This should never return */
 call kernel_main

@@ -22,4 +22,4 @@
 
 /* Size of the initial stack */
 
-#define INITIAL_STACK_SIZE	16384
+#define BOOTSTRAP_STACK_SIZE	16384
