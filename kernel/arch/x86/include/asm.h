@@ -1,5 +1,5 @@
 static inline cli(void) {
-	__asm_ volatile("cli");
+	__asm__ volatile("cli");
 }
 
 static inline hlt(void) {
