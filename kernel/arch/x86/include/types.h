@@ -10,6 +10,9 @@
  *
  */
 
+#ifndef __FANG_TYPES_H
+#define __FANG_TYPES_H
+
 #define NULL    ((void*) 0)
 
 typedef unsigned long long uint64_t;
@@ -25,3 +28,5 @@ typedef unsigned char uint8_t;
 typedef signed char int8_t;
  
 typedef uint32_t size_t;
+
+#endif /* __FANG_TYPES_H */

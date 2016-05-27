@@ -15,6 +15,8 @@
  *
  */
 
+#ifndef __FANG_MMIO_H
+#define __FANG_MMIO_H
 
 /* Basic port I/O ripped from Linux */
 
@@ -25,7 +27,7 @@ static inline void outb(uint8_t v, uint16_t port)
 
 static inline uint8_t inb(uint16_t port)
 {
-	u8 v;
+	uint8_t v;
 	asm volatile("inb %1,%0" : "=a" (v) : "dN" (port));
 	return v;
 }
@@ -37,7 +39,7 @@ static inline void outw(uint16_t v, uint16_t port)
 
 static inline uint16_t inw(uint16_t port)
 {
-	u16 v;
+	uint16_t v;
 	asm volatile("inw %1,%0" : "=a" (v) : "dN" (port));
 	return v;
 }
@@ -53,3 +55,5 @@ static inline uint32_t inl(uint16_t port)
 	asm volatile("inl %1,%0" : "=a" (v) : "dN" (port));
 	return v;
 }
+
+#endif /* __FANG_MMIO_H */

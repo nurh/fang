@@ -11,6 +11,8 @@
  *
  */
 
+#ifndef __FANG_BOOT_H
+#define __FANG_BOOT_H
 
 /* Multiboot header constants */
 
@@ -23,3 +25,5 @@
 /* Size of the initial stack */
 
 #define BOOTSTRAP_STACK_SIZE	16384
+
+#endif /* __FANG_BOOT_H */

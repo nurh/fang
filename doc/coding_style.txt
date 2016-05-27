@@ -1,0 +1,30 @@
+Fang Coding Style
+=================
+
+Preferred coding style for the Fang kernel closely resembles the one
+for the Linux kernel, and that in turn closely resembles K&R C.
+
+Indentation
+-----------
+1. Tabs not spaces.
+2. Tabs are 8 characters.
+3. Set your editor to behave accordingly.
+4. Use K&R braces.
+5. Do not indent the case labels in switch statements afer the 
+   opening brace.
+
+Include files
+-------------
+Include files need to be guarded with #ifndef/#define/#endif. 
+
+For a file foo.h, the guard style is:
+
+#ifndef __FANG_FOO_H
+#define __FANG
+
+/* Function goes here */
+
+#endif /* __FANG_FOO_H */
+
+It's good to label the #endif at the end with a comment telling you where
+the #ifndef ends.
