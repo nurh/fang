@@ -1,17 +1,15 @@
 fang
 ====
 
-The Fang Operating System.
+The Fang kernel.
 
 I’m doing a (free) operating system (just a hobby, won’t be big and
-professional like Linux) for multicore ARM and x86 machines,
+professional like Linux) for multicore aarch64 machines.
 
-This project was just to get me started on ARM development, but I've
-since added x86. Pandaboard ES is being dropped as the hardware is
-dead in the water.
+This project was intended to start ARM development, but since the
+proliferation of aarch64 I've decided to focus exclusively on that
+platform instead. All other board support is dropped.
 
 ## Goals
 
-* Right now, just bringup from baremetal and getting output via serial.
-* Initial target boards are raspberry pi 2 and intel edison. 
-* More may be added.
+* Bringup for aarch64 in Qemu.
